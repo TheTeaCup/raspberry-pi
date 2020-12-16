@@ -1,0 +1,11 @@
+# getting time stamp
+MyDate="`date +'%m/%d/%Y  %H:%M;'`"
+
+# get cpu temp
+MyTemp="`/opt/vc/bin/vcgencmd measure_temp |tr -d "=temp'C"`"
+
+# send the email
+echo -e "time stamp: $MyDate\n temp: $MyTemp 'C"  | mutt -s "Raspberry Pi Stats" email@example.com
+
+# log it=
+echo 'sending email with raspberry stats'
