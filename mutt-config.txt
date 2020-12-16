@@ -1,0 +1,24 @@
+# IMAP settings
+set imap_user = email_username@gmail.com
+set imap_pass = email_password
+set spoolfile = imaps://imap.gmail.com/INBOX
+set folder = imaps://imap.gmail.com/
+set record="imaps://imap.gmail.com/[Gmail]/Sent Mail"
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+
+# SMTP settings
+set smtp_url = "smtp://email_username@smtp.gmail.com:587/"
+set smtp_pass = $imap_pass
+set ssl_force_tls = yes
+
+# Compose and sending settings
+set editor = "nano"
+set edit_headers = yes
+set charset = UTF-8 # value of $LANG; also fallback for send_charset
+unset use_domain
+set realname = "User Alias"
+set from = "email_username@gmail.com"
+set use_from = yes
