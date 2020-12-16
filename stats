@@ -9,3 +9,7 @@ echo -e "time stamp: $MyDate\n temp: $MyTemp 'C"  | mutt -s "Raspberry Pi Stats"
 
 # log it=
 echo 'sending email with raspberry stats'
+
+
+# to-do
+# get disk useage
